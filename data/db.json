@@ -1,0 +1,24 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "Sunday League",
+            "body": "Won the match against Titan FC in Total Football Ground and now we are top of the table",
+            "author": "Waqas"
+        },
+        
+        {
+            "id": 2,
+            "title": "Winter Tournament Update",
+            "body": "We are looking forward to play in the winter tournament",
+            "author": "Khaplu"
+        },
+        
+        {
+            "id": 3,
+            "title": "Friendly Match",
+            "body": "Looking forward to play against Aston Villa this thursday!",
+            "author": "Daska"
+        }
+    ]
+}
