@@ -11,8 +11,9 @@ const Create = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { title, body, author };
+        alert('This is dummy website which uses JSON server as Fake Rest API which is non persistant so it will not update.');
     
-        fetch('http://localhost:8000/blogs/', {
+        fetch('https://my-json-server.typicode.com/waqashameed/footy-blog-json/blogs/', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)
