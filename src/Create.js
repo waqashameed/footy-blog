@@ -6,7 +6,7 @@ const Create = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Waqas');
     const [isPending, setIsPending] = useState(false);
-    const history = useHistory;
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();

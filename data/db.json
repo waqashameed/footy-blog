@@ -17,6 +17,12 @@
       "title": "Friendly Match",
       "body": "Looking forward to play against Aston Villa this thursday!",
       "author": "Daska"
+    },
+    {
+      "title": "Interesting Title",
+      "body": "Text about the interesting topic",
+      "author": "Khaplu",
+      "id": 4
     }
   ]
 }
