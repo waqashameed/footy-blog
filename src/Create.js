@@ -4,13 +4,14 @@ import { useHistory } from "react-router-dom";
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('');
+    const [author, setAuthor] = useState('Waqas');
     const [isPending, setIsPending] = useState(false);
     const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { title, body, author };
+        alert('This is dummy website which uses JSON server as Fake Rest API which is non persistant so it will not update.');
     
         fetch('https://my-json-server.typicode.com/waqashameed/footy-blog-json/blogs/', {
             method: 'POST',
@@ -44,15 +45,14 @@ const Create = () => {
             onChange={(e) => setBody(e.target.value)}
           ></textarea>
           <label>Blog author:</label>
-          <input 
-            type="text" 
-            required 
+          <select
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-          />
-        
-          
-          
+          >
+            <option value="Waqas">Waqas</option>
+            <option value="Khaplu">Khaplu</option>
+            <option value="Daska">Daska</option>
+          </select>
           { !isPending && <button>Add Blog</button> }
           { isPending && <button>Adding Blog...</button> }
           

@@ -8,6 +8,7 @@ const BlogDetails = () => {
     const history = useHistory();
     
     const handleClick = () => {
+        alert('This is dummy website which uses JSON server as Fake Rest API which is non persistant so it will not update.');
         fetch('https://my-json-server.typicode.com/waqashameed/footy-blog-json/blogs/' + blog.id, {
             method: 'DELETE'
         }).then(() => {
